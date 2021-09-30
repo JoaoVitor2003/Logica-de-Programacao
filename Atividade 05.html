@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+
+    <script>
+
+            var valor1 = parseFloat(prompt("Digite o primeiro número"));
+            var valor2 = parseFloat(prompt("Digite o segundo número"));
+
+            var escolha = parseInt(prompt('Selecione uma opção: 1)Somar 2)Subtrair 3)Multiplicar 4)Dividir'));
+
+            var resultado = 0;
+            
+            switch(escolha){
+
+                    case 1:
+                        resultado = valor1 + valor2;
+                        alert('A soma é: ' +resultado);
+                        break;
+
+                    case 2:
+                        resultado = valor1 - valor2;
+                        alert('A subtração é: ' +resultado);
+                        break;
+
+                    case 3:
+                        resultado = valor1 * valor2;
+                        alert('A multiplicação é: ' +resultado);
+                        break;
+
+                    case 4:
+                        resultado = valor1 / valor2;
+                        alert('A divisão é: ' +resultado);
+                        break;
+
+                    default:
+                    alert('Algo está errado tente novamente');
+
+                }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
