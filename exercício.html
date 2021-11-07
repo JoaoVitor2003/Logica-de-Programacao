@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+
+  <div id="exemplo"></div>
+  
+  
+  
+  <script type="text/javascript">
+
+    class Elevador {
+        constructor(pessoas, andar) {
+            this.pessoas = pessoas;
+            this.andar = andar;
+        }
+
+        entra(x) {
+            if (this.pessoas >= 5) {
+                alert('O elevador está cheio desça uma pessoa !');
+            } else (this.pessoas = this.pessoas + x)
+            console.log('O elevador possui ' + this.pessoas +' pessoas.');
+        }        
+
+        sai(x) {
+            if (this.pessoas <= 0) {
+                alert('O elevador não tem pessoas para descer');    
+            } else (this.pessoas = this.pessoas - x)
+            console.log('O elevador possui ' + this.pessoas +' pessoas.');
+        }
+
+        sobe() {
+            if (this.andar >= 10) {
+                alert('O elevador está no mais alto lugar desça !');
+            } else (this.andar = this.andar + 1)
+            console.log('O elevador está no ' + this.andar +' º andar.');
+        }
+
+        desce() {
+            if (this.andar <= 0) {
+                alert('O elevador já está no térreo não tem como descer mais !');
+            } else (this.andar = this.andar - 1)
+            console.log('O elevador está no ' + this.andar +' º andar.');
+        }
+    }
+
+    var pessoa = new Elevador (0);
+    var lugar = new Elevador (0, 0);
+
+  </script>
+
+</body>
+</html>
